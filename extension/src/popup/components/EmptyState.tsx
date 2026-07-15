@@ -1,0 +1,2 @@
+import { MessageCircleMore } from 'lucide-react';
+export function EmptyState() { return <div className="mx-auto flex max-w-[280px] flex-col items-center px-4 py-7 text-center"><span className="grid h-12 w-12 place-items-center rounded-2xl bg-indigo-50 text-indigo-600"><MessageCircleMore size={24}/></span><h2 className="mt-3 text-sm font-semibold text-slate-900">Ask anything about this video</h2><p className="mt-1 text-[11px] leading-5 text-slate-500">Try “Explain the main concept” or use an action above to make study material.</p></div>; }

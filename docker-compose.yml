@@ -1,0 +1,22 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: tubemind-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: tubemind
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d tubemind"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    volumes:
+      - tubemind_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  tubemind_postgres_data:
+

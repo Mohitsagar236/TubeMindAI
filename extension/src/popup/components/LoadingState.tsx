@@ -1,0 +1,1 @@
+export function LoadingState({ label = 'Finding relevant parts...' }: { label?: string }) { return <div className="flex items-center gap-2 px-1 py-2 text-xs text-slate-500"><span className="flex gap-1">{[0,1,2].map(i => <i key={i} className="h-1.5 w-1.5 animate-bounce rounded-full bg-indigo-500" style={{ animationDelay: `${i*120}ms` }}/>)}</span>{label}</div>; }

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+html, body, #root { margin: 0; width: 420px; height: 620px; overflow: hidden; }
+body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, sans-serif; background: #f8fafc; color: #0f172a; }
+button, input, textarea { font: inherit; }
+button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid #6366f1; outline-offset: 2px; }
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-thumb { border-radius: 99px; background: #cbd5e1; }
+.markdown p + p { margin-top: .55rem; }
+.markdown h1, .markdown h2, .markdown h3 { margin: .75rem 0 .35rem; font-weight: 700; color: #0f172a; }
+.markdown h1 { font-size: 1rem; } .markdown h2 { font-size: .9rem; } .markdown h3 { font-size: .8rem; }
+.markdown ul, .markdown ol { margin: .4rem 0 .4rem 1rem; }
+.markdown ul { list-style: disc; } .markdown ol { list-style: decimal; }
+.markdown code { border-radius: .3rem; background: #eef2ff; padding: .1rem .25rem; color: #4338ca; }
+.markdown pre { margin-top: .5rem; overflow-x: auto; border-radius: .65rem; background: #0f172a; padding: .65rem; color: #e2e8f0; }
+.markdown pre code { background: transparent; padding: 0; color: inherit; }

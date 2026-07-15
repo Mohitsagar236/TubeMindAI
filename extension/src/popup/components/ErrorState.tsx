@@ -1,0 +1,2 @@
+import { AlertCircle, RotateCw } from 'lucide-react';
+export function ErrorState({ message, onRetry }: { message: string; onRetry?: () => void }) { return <div className="mx-4 my-3 flex items-start gap-2 rounded-xl border border-red-100 bg-red-50 p-3 text-xs text-red-700"><AlertCircle size={16} className="shrink-0"/><span className="flex-1 leading-relaxed">{message}</span>{onRetry && <button onClick={onRetry} aria-label="Retry"><RotateCw size={15}/></button>}</div>; }
